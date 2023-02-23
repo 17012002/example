@@ -18,7 +18,7 @@ Route::get('/', function () {
 });
 
 Route::get('/caca1', function () {
-    return "Exacto esto es una caca de vaca1";
+    return "Exacto esto es una caca de vaca";
 });
 
 Route::redirect('/here', '/caca');
