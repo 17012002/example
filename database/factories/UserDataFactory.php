@@ -23,7 +23,7 @@ class UserDataFactory extends Factory
             'name' => $name,
             'password' => $this->faker->password(),
             'gender' => $gender,
-            'date_of_the_creation_of_the_account' => $this->faker->dateTimeThisCentury($max = 'now', $timezone = null),
+            'date_of_the_creation_of_the_account' => $this->faker->dateTimeThisDecade($max = 'now', $timezone = null),
         ];
     }
 }
