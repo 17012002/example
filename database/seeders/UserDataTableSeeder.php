@@ -20,25 +20,25 @@ class UserDataTableSeeder extends Seeder
         $user1->save();
 
         $user2 = new UserData;
-        $user2->name="Loren";
+        $user2->name="Clara";
         $user2->password="contraseña22";
-        $user2->gender="M";
+        $user2->gender="F";
         $user2->save();
 
         $user3 = new UserData;
-        $user3->name="Loren";
+        $user3->name="Carmen";
         $user3->password="contraseña23";
-        $user3->gender="M";
+        $user3->gender="F";
         $user3->save();
 
         $user4 = new UserData;
-        $user4->name="Loren";
+        $user4->name="Paula";
         $user4->password="contraseña24";
-        $user4->gender="M";
+        $user4->gender="F";
         $user4->save();
 
         $user5 = new UserData;
-        $user5->name="Loren";
+        $user5->name="Marcelino";
         $user5->password="contraseña25";
         $user5->gender="M";
         $user5->save();
