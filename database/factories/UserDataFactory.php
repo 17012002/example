@@ -16,8 +16,15 @@ class UserDataFactory extends Factory
      */
     public function definition(): array
     {
+        $name = $this->faker->name();
+        $gender = $this->faker->randomElement(['male', 'female']);
+        
         return [
-            //
+            'name' => $name,
+            'password' => $this->faker->password(),
+            'gender' => $gender,
+            'date_of_the_creation_of_the_account' => $this->faker->dateTimeThisCentury($max = 'now', $timezone = null),
         ];
     }
 }
+

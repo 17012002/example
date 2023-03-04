@@ -13,34 +13,13 @@ class UserDataTableSeeder extends Seeder
      */
     public function run(): void
     {
-        $user1 = new UserData;
-        $user1->name="Loren";
-        $user1->password="contraseña21";
-        $user1->gender="M";
-        $user1->save();
+        $a = new UserData;
+        $a->name="Loren";
+        $a->password="contraseña21";
+        $a->date_of_the_creation_of_the_account="3/4/1492";
+        $a->gender="male";
+        $a->save();
 
-        $user2 = new UserData;
-        $user2->name="Clara";
-        $user2->password="contraseña22";
-        $user2->gender="F";
-        $user2->save();
-
-        $user3 = new UserData;
-        $user3->name="Carmen";
-        $user3->password="contraseña23";
-        $user3->gender="F";
-        $user3->save();
-
-        $user4 = new UserData;
-        $user4->name="Paula";
-        $user4->password="contraseña24";
-        $user4->gender="F";
-        $user4->save();
-
-        $user5 = new UserData;
-        $user5->name="Marcelino";
-        $user5->password="contraseña25";
-        $user5->gender="M";
-        $user5->save();
+        UserData::factory()->count(19)->create();
     }
 }

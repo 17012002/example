@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('password');
-            $table->dateTime('date of the creation of the account', 6)->nullable();
+            $table->string('date_of_the_creation_of_the_account')->nullable();
             $table->string('gender')->nullable();
             $table->timestamps();
         });
