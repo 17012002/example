@@ -5,12 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class UserData extends Model
+class BFFid extends Model
 {
     use HasFactory;
 
-    public function bffid()
-    {
-        return $this->hasOne(BFFid::class, 'user_id', 'id');
-    }
+    public function userdata()
+{
+    return $this->belongsTo(UserData::class, 'user_id', 'id');
+}
 }

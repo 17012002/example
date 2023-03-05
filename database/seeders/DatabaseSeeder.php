@@ -20,5 +20,6 @@ class DatabaseSeeder extends Seeder
         // ]);
 
         $this->call(UserDataTableSeeder::class);
+        $this->call(BFFidTableSeeder::class);
     }
 }
