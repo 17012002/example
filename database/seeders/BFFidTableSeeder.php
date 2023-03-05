@@ -15,11 +15,13 @@ class BFFidTableSeeder extends Seeder
     {
         $e = new BFFid;
         $e->user_id = 1;
-        $e->bff_bracelet_id='brazalete_lorenzo';
-        $e->name="Loren amigo";
+        $e->bff_bracelet_id='00000000000';
+        $e->name="Loren_amigo";
         $e->password="contraseña21Amistad";
         $e->date_of_the_creation_of_the_account="eldiasiguiente";
-        $e->gender="mujer española";
+        $e->gender="una_moza_de_mi_pueblo";
         $e->save();
+
+        BFFid::factory()->count(19)->create();
     }
 }
