@@ -9,7 +9,7 @@ class SubCommunity extends Model
 {
     use HasFactory;
 
-    public function userDataCommunityFunc(){
-        return $this->hasMany(UserData::class, subscriptions, id);
+    public function userdataset(){
+        return $this->hasMany(UserData::class, 'subscriptions', 'id');
     }
 }

@@ -16,7 +16,7 @@ class UserData extends Model
 
     public function subcommunity()
     {
-        return $this->belongsTo(SubCommunity::class, 'sub_community_id', 'id');
+        return $this->belongsTo(SubCommunity::class, 'subscriptions', 'id');
     }
 
     public function chatting()
