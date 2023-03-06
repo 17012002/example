@@ -13,4 +13,14 @@ class UserData extends Model
     {
         return $this->hasOne(BFFid::class, 'user_id', 'id');
     }
+
+    public function subcommunity()
+    {
+        return $this->belongsTo(SubCommunity::class, 'sub_community_id', 'id');
+    }
+
+    public function chatting()
+    {
+        return $this->belongsToMany(ChatUsers::class, 'chatter_id', 'user_id');
+    }
 }

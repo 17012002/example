@@ -18,6 +18,7 @@ class UserDataTableSeeder extends Seeder
         $a->password="contraseña21";
         $a->date_of_the_creation_of_the_account="3/4/1492";
         $a->gender="male";
+        $a->subscriptions="1";
         $a->save();
 
         UserData::factory()->count(19)->create();

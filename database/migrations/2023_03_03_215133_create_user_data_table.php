@@ -17,10 +17,13 @@ return new class extends Migration
             $table->string('password');
             $table->string('date_of_the_creation_of_the_account')->nullable();
             $table->string('gender')->nullable();
-            $table->timestamps();
-        });
-    }
+            $table->bigInteger('subscriptions')->unsigned();
 
+
+            $table->foreign('subscriptions')->references('id')->on('sub_communities')->
+                    onDelete('cascade')->onUpdate('cascade');
+            });
+        }
     /**
      * Reverse the migrations.
      */

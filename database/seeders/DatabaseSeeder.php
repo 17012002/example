@@ -18,7 +18,7 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
-
+        $this->call(SubCommunityTableSeeder::class);
         $this->call(UserDataTableSeeder::class);
         $this->call(BFFidTableSeeder::class);
     }

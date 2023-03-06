@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('sub_communities', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->integer('members');
             $table->timestamps();
         });
     }
