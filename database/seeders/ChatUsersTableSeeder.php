@@ -14,11 +14,15 @@ class ChatUsersTable extends Seeder
     public function run(): void
     {
         $t = new ChatUsers;
-        $t->name="Alberta";
         $t->language="en";
         $t->save();
 
+        $j = new ChatUsers;
+        $j->language="ch";
+        $j->save();
+
         $t->UserData()->attach(1);
         $t->UserData()->attach(4);
+        $j->UserData()->attach(1);
     }
 }

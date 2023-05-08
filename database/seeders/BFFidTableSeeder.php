@@ -18,8 +18,8 @@ class BFFidTableSeeder extends Seeder
         $e->bff_bracelet_id='00000000000';
         $e->name="Loren_amigo";
         $e->password="contraseña21Amistad";
-        $e->date_of_the_creation_of_the_account="eldiasiguiente";
-        $e->gender="una_moza_de_mi_pueblo";
+        $e->date_of_the_creation_of_the_account="21/5/2122";
+        $e->gender="male";
         $e->save();
 
         BFFid::factory()->count(19)->create();
