@@ -21,6 +21,6 @@ class UserDataTableSeeder extends Seeder
         $a->subscriptions="1";
         $a->save();
 
-        UserData::factory()->count(19)->create();
+        UserData::factory()->count(15)->create();
     }
 }
