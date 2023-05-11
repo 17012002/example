@@ -15,8 +15,8 @@ class SubCommunityTableSeeder extends Seeder
     {
 
         $i = new SubCommunity;
-        $i->name="Portugal";
-        $i->members=132;
+        $i->name="Social, Spirituality, Outdoors, Beauty, Entertainment, Relationships, Adventure, Finance, Fashion, Comedy";
+        $i->people_with_common_interests=132;
         $i->save();
         
         SubCommunity::factory()->count(4)->create();

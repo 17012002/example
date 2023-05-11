@@ -22,7 +22,7 @@ class SubCommunityFactory extends Factory
         
         return [
             'name' => implode(', ', $name),
-            'members' => $this->faker->numberBetween(1, 10000),
+            'people_with_common_interests' => $this->faker->numberBetween(1, 10000),
         ];
     }
 }
