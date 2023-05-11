@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+use App\Models\UserData; // Add this
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\BFFid>
@@ -20,6 +21,7 @@ class BFFidFactory extends Factory
         $gender = $this->faker->randomElement(['male', 'female']);
         
         return [
+            'user_id' => UserData::factory()->create()->id, // Add this
             'bff_bracelet_id' => $this->faker->bankAccountNumber(),
             'name' => $name,
             'password' => $this->faker->password(),
