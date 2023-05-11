@@ -19,6 +19,6 @@ class SubCommunityTableSeeder extends Seeder
         $i->people_with_common_interests=132;
         $i->save();
         
-        SubCommunity::factory()->count(4)->create();
+        SubCommunity::factory()->count(10)->create();
     }
 }
