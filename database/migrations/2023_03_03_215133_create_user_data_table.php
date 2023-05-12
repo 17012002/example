@@ -21,6 +21,8 @@ return new class extends Migration
             $table->bigInteger('subscriptions')->unsigned();
             $table->foreign('subscriptions')->references('id')->on('sub_communities')->
                     onDelete('cascade')->onUpdate('cascade');
+
+
         });
         }
     /**
