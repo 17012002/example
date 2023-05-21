@@ -8,4 +8,4 @@
 </p>
 
 ## About this Laravel project
-Used to learn about web deb
+Used to learn about full stack using laravel and sereval external libraries to support JavaScrip, bootsctrap...
